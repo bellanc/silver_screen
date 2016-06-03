@@ -1,6 +1,5 @@
-class OpenSalesforce
-  include SilverScreen
-  include SilverScreen::Task
+class OpenSalesforce < SilverScreen::Task
+  include SilverScreen::Action
 
   define_task_tenses :opened_salesforce
 

@@ -1,14 +1,9 @@
 class LoginPage
-  attr_accessor :username,
-                :password,
-                :login
 
-    def self.username
-      element_by({id: 'username'})
-    end
-    @password = {id: 'password'}
-    @login = {id: 'Login'}
-    @referrals =
+    USERNAME = {id: 'username'}
+    PASSWORD = {id: 'password'}
+    LOGIN = {id: 'Login'}
+    # @referrals =
 
   def page_url
     'test.salesforce.com'

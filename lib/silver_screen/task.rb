@@ -2,7 +2,7 @@ module SilverScreen
 
   module TaskHarness; end
 
-  class Task
+  module Task
 
     def self.define_task_tenses(*names)
       task_class = self

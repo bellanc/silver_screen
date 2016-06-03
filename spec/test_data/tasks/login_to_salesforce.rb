@@ -1,5 +1,6 @@
-class LogIntoSalesforce < SilverScreen::Task
+class LogIntoSalesforce
   include SilverScreen
+  include SilverScreen::Task
 
   attr_accessor :who_to_login_as
 
@@ -16,12 +17,12 @@ class LogIntoSalesforce < SilverScreen::Task
   end
 
   def as_an_admin
-    self.who_to_login_as = 'bbellanca@netjetsus.com.gcmdemo'
+    self.who_to_login_as = 'salesforce@example.com'
     self
   end
 
   def admin_password
-    'Winter15'
+    'password'
   end
 
 end

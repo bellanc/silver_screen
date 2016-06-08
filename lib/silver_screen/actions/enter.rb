@@ -12,7 +12,7 @@ module SilverScreen
         self.new(text)
       end
 
-      def into(element_to_add_text)
+      def into(element_to_add_text = nil)
         handler = @enter_handlers.find { |handler| handler.handle?(element_to_add_text) }
         handler.element_to_add_text = element_to_add_text
         handler.the_text = @the_text

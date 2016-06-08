@@ -13,8 +13,13 @@ describe 'Browsing the web with SilverScreen' do
       sales_user = SilverScreen::Actor.new('Alan Guy')
       sales_user.can(BrowseTheWeb.with(@his_browser))
       sales_user.has(opened_salesforce)
-
       sales_user.has(logged_into_salesforce.as_an_admin)
+
+      sales_user.has(searched_salesforce.for(an_active_agreement))
+      sales_user.has(logged_into_salesforce.as_an_admin)
+      sales_user.has(logged_into_salesforce.as_an_admin)
+      sales_user.has(logged_into_salesforce.as_an_admin)
+
 
     end
   end
